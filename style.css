@@ -115,8 +115,13 @@ body {
 
 }
 
-.mainFrame {
+.dishImg {
+    width: 100%;
 
+    border-radius: 10px;
+}
+
+.mainFrame {
 
     background-color: hsl(0, 0%, 100%);
 
@@ -132,23 +137,33 @@ body {
 
     text-align: start;
 
+    font-family: "Outfit";
 }
 
-.dishImg {
-    width: 100%;
 
-    border-radius: 10px;
-}
 
 .mainFrame h1 {
     font-size: 30px;
     color: hsl(24, 5%, 18%);
 }
 
+.mainFrame h2 {
+    color: hsl(14, 45%, 36%);
+    font-size: 20px;
+}
+
 .mainFrame p {
     font-size: 16px;
     color: hsl(30, 10%, 34%);
+
+
 }
+
+.mainFrame li {
+    color: hsl(30, 10%, 34%);
+}
+
+/* Preparation zone */
 
 .preparationInfo {
     background-color: hsl(330, 100%, 98%);
@@ -158,7 +173,6 @@ body {
 
     border-radius: 10px;
     padding: 20px;
-
 
 }
 
@@ -172,11 +186,106 @@ body {
 }
 
 .preparationInfo ul li {
-    margin: 10px;
+    margin: 10px 20px;
+    padding-left: 10px;
+
+}
+
+.preparationInfo ul li::marker {
+    color: hsl(332, 51%, 32%);
 
 }
 
 .mainFrame span {
-    color: hsl(24, 5%, 18%);
     font-weight: 800;
+}
+
+/* Ingredients zone  */
+
+.ingredientsInfo {
+    width: 100%;
+    padding-bottom: 20px;
+    border-bottom: 0.1rem solid hsl(30, 18%, 87%);
+}
+
+.ingredientsInfo ul {
+    list-style: disc;
+
+}
+
+.ingredientsInfo ul li {
+    margin: 10px 20px;
+    padding-left: 10px;
+
+}
+
+.ingredientsInfo ul li::marker {
+    color: hsl(14, 45%, 36%);
+
+}
+
+/* Instruction zone */
+
+.instructionInfo {
+    width: 100%;
+    padding-bottom: 20px;
+    border-bottom: 0.1rem solid hsl(30, 18%, 87%);
+}
+
+.instructionInfo ol {
+    list-style: number;
+
+}
+
+.instructionInfo ol li {
+    margin: 10px 20px;
+    padding-left: 10px;
+
+}
+
+.instructionInfo ol li::marker {
+    color: hsl(14, 45%, 36%);
+
+}
+
+/* Nutrition zone */
+
+.nutritionInfo {
+    width: 100%;
+}
+
+.nutritionInfo h2 {
+    margin-bottom: 20px;
+}
+
+.nutritionDescription {
+    padding-bottom: 20px;
+
+}
+
+.rowContainer {
+    width: 100%;
+
+
+    display: flex;
+    justify-content: space-evenly;
+
+    padding: 5px 0px;
+    border-bottom: 0.1rem solid hsl(30, 18%, 87%);
+}
+
+.rowContainer p {
+    text-align: start;
+    width: 50%;
+    padding-left: 30px;
+
+}
+
+.nutritionInfo .lastContainer {
+    border: none;
+}
+
+.nutritionInfo .nutritionValues {
+    color: hsl(332, 51%, 32%);
+    font-weight: 600;
 }
