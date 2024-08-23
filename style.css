@@ -116,7 +116,7 @@ body {
 }
 
 .dishImg {
-    width: 100%;
+    width: 90%;
 
     border-radius: 10px;
 }
@@ -127,6 +127,21 @@ body {
 
     width: 80%;
     border-radius: 20px;
+
+    padding-top: 35px;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+.textArea {
+    background-color: hsl(0, 0%, 100%);
+
     padding: 35px 40px;
 
     display: flex;
@@ -139,7 +154,6 @@ body {
 
     font-family: "Outfit";
 }
-
 
 
 .mainFrame h1 {
@@ -288,4 +302,30 @@ body {
 .nutritionInfo .nutritionValues {
     color: hsl(332, 51%, 32%);
     font-weight: 600;
+}
+
+
+/* Responsive design */
+
+@media screen and (max-width: 450px) {
+
+    body {
+
+        padding: 0;
+
+    }
+
+    .dishImg {
+        width: 100%;
+
+        border-radius: 0;
+    }
+
+
+
+    .mainFrame {
+        width: 100%;
+
+        padding: 0;
+    }
 }
